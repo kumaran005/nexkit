@@ -32,9 +32,9 @@ npm install nexkit
 
 ```ts
 // demo.ts
-import { NexkitApp } from 'nexkit';
+import { Nexkit } from 'nexkit';
 
-const app = new NexkitApp();
+const app = new Nexkit();
 
 app.get('/', (req, res) => {
   res.send('<h1>Hello from Nexkit!</h1>');

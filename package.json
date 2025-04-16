@@ -1,0 +1,43 @@
+{
+  "name": "nexkit",
+  "version": "1.0.2",
+  "description": "A blazing-fast, TypeScript-only web framework built on raw Node.js TCP",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "nexkit": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "tsx demo.ts",
+    "build": "tsup",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "nexkit",
+    "typescript",
+    "web framework",
+    "nodejs",
+    "http",
+    "net",
+    "tcp",
+    "express-alternative"
+  ],
+  "author": "Rajakumaran",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "kleur": "^4.1.5"
+  }
+}

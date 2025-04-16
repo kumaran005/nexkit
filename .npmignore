@@ -1,0 +1,5 @@
+# .npmignore
+src/
+demo.ts
+tsconfig.json
+tsup.config.ts

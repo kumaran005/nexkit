@@ -29,6 +29,14 @@
     "tcp",
     "express-alternative"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumaran005/nexkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kumaran005/nexkit/issues"
+  },
+  "homepage": "https://github.com/kumaran005/nexkit#readme",
   "author": "Rajakumaran",
   "license": "MIT",
   "devDependencies": {

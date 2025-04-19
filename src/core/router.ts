@@ -1,9 +1,11 @@
-import { Handler, IRouter } from '@core/types';
+import { Handler, IRouter } from "@core/types";
 
 class Router implements IRouter {
   private routes: Record<string, { path: string; handler: Handler }[]> = {
     GET: [],
-    POST: []
+    POST: [],
+    PUT: [],
+    DELETE: [],
   };
 
   public addRoute(method: string, path: string, handler: Handler) {
@@ -14,7 +16,7 @@ class Router implements IRouter {
   }
 
   public findHandler(method: string, path: string) {
-    return this.routes[method]?.find(r => r.path === path);
+    return this.routes[method]?.find((r) => r.path === path);
   }
 }
 

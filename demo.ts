@@ -16,5 +16,6 @@ app.post('/api/data', (req: Request, res: Response) => {
   res.send(`<h3>Received data:</h3><pre>${req.body}</pre>`, 'text/html');
 });
 
+
 // Start server
 app.listen({ port: 8080 });

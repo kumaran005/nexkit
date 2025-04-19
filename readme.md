@@ -79,7 +79,7 @@ nexkit/
 
 ## 🔧 Usage
 
-You can define routes using `.get()` or `.post()`:
+You can define routes:
 
 ```ts
 app.get('/hello', (req, res) => {
@@ -88,6 +88,19 @@ app.get('/hello', (req, res) => {
 
 app.post('/submit', (req, res) => {
   res.send(`Received POST body: ${req.body}`);
+});
+
+app.put('/update', (req, res) => {
+  res.send(`Received PUT body: ${req.body}`);
+});
+
+app.delete('/delete', (req, res) => {
+  res.send('Deleted successfully');
+});
+
+app.use((req, res, next) => {
+  console.log('Middleware executed');
+  next();
 });
 ```
 
